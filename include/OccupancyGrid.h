@@ -18,7 +18,7 @@ struct OccupancyGrid {
    * @param xIndex is an integer denoting the index along the x direction in the grid
    * @param yIndex is an integer denoting the index along the y direction in the grid
    */
-  int get1DIndex(int xIndex, int yIndex) {
+  int get1DIndex(int xIndex, int yIndex) const {
     int result = yIndex * width + xIndex;
     return (result>= (width * height))? -1: result;
   }

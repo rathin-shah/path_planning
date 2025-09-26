@@ -51,4 +51,7 @@ grid.
 
 ## Assumptions
 
-List any assumptions you make in this section.
+1.The robot is modeled as a point and as a simple circle in 2D space. Its orientation (`theta`) and height are not considered in the path planning phase.
+2.The planner operates on a C-space where all obstacles are "inflated" (expanded) by the robot's radius (0.3m). 
+3.The A* algorithm uses simple heuristic of shortest euclidean distance making it admissible
+
